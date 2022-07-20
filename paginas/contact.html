@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailen Makeup Contacto</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header flexbox" >
+        <img class="header__logo" src="../imagenes/Logo.png" alt="logo"  width="240" height="200">
+        <nav>
+            <ul class="menu flexbox">
+                <li class="menu__index separacionMenu">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__servicios separacionMenu">
+                    <a href="servicios.html">Servicios</a> 
+                </li>
+                <li class="menu__galeria separacionMenu">
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li class="menu__about_me separacionMenu">
+                    <a href="about_me.html">Sobre mi</a>
+                </li>
+                <li class="menu__contact separacionMenu">
+                    <a href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido de la pagina -->
+    
+    <main class="main">
+        <div class="girdContact">
+            <div class="gridContactoHijo1">
+                <form>
+                    <h1>Contacto</h1>
+                    <div class="card">
+                        <div class="card1Nombre">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="card1Mail">
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="email" placeholder="Ingrese su email" required>
+                        </div>
+                        <div class="card1Consulta">
+                            <label for="consulta">Ingrese su consulta</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="20" required></textarea>
+                        </div>
+                        <div class="card1Aceptar">
+                            <button>Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div  class="centrarFlexboxRow gridContactoHijo2">
+                <iframe class="mapaContactoTamanio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.9518701770453!2d-58.98518741180796!3d-27.47525233815353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cc68c6e23fd%3A0xedebf3585976d213!2sSeitor%20%26%20Avenida%20Chaco%2C%20Resistencia%2C%20Chaco!5e0!3m2!1ses-419!2sar!4v1655884879645!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div  class="centrarFlexboxRow">
+        <img src="../imagenes/Logo.png" alt="logo"  width="240" height="200">
+        </div>
+        <!-- Redes -->
+        <div class="centrarFlexboxRow">
+            <a href="https://www.instagram.com/ailenmakeup21/?hl=es-la"  target="_blank" >
+                <img src="../imagenes/Instagram.png" alt="instagram_logo" width="50" height="50">
+            </a>
+            <a href="https://www.facebook.com/"  target="_blank">
+                <img src="../imagenes/Facebook.png" alt="facebook_logo" width="50" height="50">
+            </a>
+            <a href="https://www.twitter.com/"  target="_blank">
+                <img src="../imagenes/Twitter.png" alt="twitter_logo" width="50" height="50">
+            </a>
+        </div>
+         <!-- Whatsapp -->
+         <div class="whatsapp">
+            <a href="https://www.whatsapp.com/?lang=es"  target="_blank" >
+                <img src="../imagenes/Whatsapp.png" width="50px" height="50px" alt="whatsapp">
+            </iframe>
+        </div>
+    </footer>
+</body>
+</html>

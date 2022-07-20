@@ -1,0 +1,585 @@
+/* Para todas las paginas */
+* { 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Anek Latin';
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------Estilos y clases generales--------------------- */
+/* ----------------------------------------------------------------------- */
+
+.fuenteGrande{
+    font-size: xx-large;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: rgb(73, 1, 73);
+}
+h1, h2, h3{
+    text-align: center; 
+}
+
+.textCenter{ 
+    text-align: center
+}
+/* ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Header---------------------------------- */
+/* ----------------------------------------------------------------------- */
+.header{
+    background-image: linear-gradient(to bottom, rgba(218, 172, 0, 0.7), rgb(197, 165, 8, 0.3964), rgba(255, 255, 255, 0.112));
+    color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu{
+    font-size: x-large;
+    margin-left: 450px;
+    margin-top: 100px;
+    list-style: none;
+}
+
+.separacionMenu{
+    margin: 10px;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Main------------------------------------ */
+/* ----------------------------------------------------------------------- */
+.main{
+    margin-top: 230px;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Footer---------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+
+.whatsapp{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem 4rem;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    margin-bottom: 2rem;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------about_me Page------------------------------- */
+/* ----------------------------------------------------------------------- */
+.titulosSobreMi{
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    margin: 40%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.colorSobreMi{
+    color: goldenrod;
+}
+
+.espaciadoSobreMi{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.descripcionSobreMi{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 3px solid goldenrod;
+    border-radius: 9px;
+}
+
+.imgaenPortadaSobreMi{
+    width: 450px;
+    height: 590px;
+}
+
+.imagenesTitulosSobreMi{
+    width: 1000px;
+    height: 700px;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Contact Page---------------------------- */
+/* ----------------------------------------------------------------------- */
+.card{
+    background-color: white;
+    color: black;
+    width: 18rem;
+    height: auto;
+    padding: 16px;
+    margin: 32px;
+    overflow: auto; /* Para que si es necesario aparezcan las barras para moverse */
+    border-radius: 20px;
+}
+
+.card1Nombre{
+    padding: 10px;
+}
+
+.card1Mail{
+    padding: 10px;
+}
+
+.card1Consulta{
+    padding: 10px;
+}
+
+.card1Aceptar{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.girdContact{
+    display: grid;
+    border: 5px solid rgba(218, 165, 32, 0.396);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 12rem;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
+    grid-template-areas: 
+    "hijo1 hijo2";
+    gap: 3px 3px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+.gridContactoHijo1{
+    background-color: goldenrod;
+    grid-area: hijo1;
+}
+.gridContactoHijo2{
+    background-color: white;
+    grid-area: hijo2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapaContactoTamanio{
+    width: 400px;
+    height: 480px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Galeria Page---------------------------- */
+/* ----------------------------------------------------------------------- */
+
+/* .cardGaleria{
+    background-color: white;
+    color: black;
+    width: 720px;
+    height: auto;
+    padding: 16px;
+    margin: 32px;
+    border: 5px solid goldenrod;
+    overflow: auto; 
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardImagenGaleria{
+    display: flex;
+}
+*/
+
+.gridGaleria{
+    display: grid;
+    border: 5px solid goldenrod;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    gap: 3px 3px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;  
+}
+
+.gridGaleriaHijo{
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.gridGaleriaImg1{
+    background-color: white;
+    grid-area: img1;
+    object-fit: cover;
+}
+
+.gridGaleriaImg2{
+    background-color: white;
+    grid-area: img2;
+    object-fit: cover;
+}
+
+.gridGaleriaImg3{
+    background-color: white;
+    grid-area: img3;
+    object-fit: cover;
+}
+
+.gridGaleriaImg4{
+    background-color: white;
+    grid-area: img4;
+    object-fit: cover;
+}
+
+.gridGaleriaImg5{
+    background-color: white;
+    grid-area: img5;
+    object-fit: cover;
+}
+
+.gridGaleriaImg6{
+    background-color: white;
+    grid-area: img6;
+    object-fit: cover;
+}
+
+.imagenesGaleria{
+    height: 295px;
+    width: 225px;
+} 
+
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------- */
+/* -------------------------------Servicios Page-------------------------- */
+/* ----------------------------------------------------------------------- */
+.cardServicio{
+    background-color: white;
+    color: black;
+    width: 18rem;
+    height: auto;
+    padding: 16px;
+    margin: 32px;
+    border: 5px solid goldenrod;
+    overflow: auto;
+    border-radius: 10px;
+    display:grid;
+} 
+
+
+.cardServicioNombre{
+    padding-bottom: 5px;
+    color: goldenrod;
+    text-align: center;
+}
+
+.cardServicioDescripcion{
+    padding: 10px;
+    text-align: center;
+}
+
+.cardServicioConsultar{
+    display: grid;
+    justify-content: center;
+}
+
+.cardServicioImagen{
+    display: grid;
+    justify-content: center;       
+    margin-bottom: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tituloServicios{
+    color: goldenrod;
+}
+
+.gridServicios{
+    display: grid;
+    border: 5px solid rgba(218, 165, 32, 0.396);
+    border-radius: 1rem;
+    margin: 0rem;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
+    grid-template-areas: 
+    "card1 card2 card3 card4";
+    gap: 3px 3px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.gridServiciosCard1{
+    background-color: white;
+    grid-area: card1;
+    object-fit: cover;
+}
+
+.gridServiciosCard2{
+    background-color: white;
+    grid-area: card2;
+    object-fit: cover;
+}
+
+.gridServiciosCard3{
+    background-color: white;
+    grid-area: card3;
+    object-fit: cover;
+}
+
+.gridServiciosCard4{
+    background-color: white;
+    grid-area: card4;
+    object-fit: cover;
+}
+/* ----------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------Flexbox General----------------------------- */
+/* ----------------------------------------------------------------------- */
+.flexbox {
+    display: flex;
+}
+
+.centrarFlexboxRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centrarFlexboxColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centrarFlexboxTextRow{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------Index------------------------------------ */
+/* ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------Grids------------------------------------ */
+/* ----------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* -----------------------------Medias Querys----------------------------- */
+/* ----------------------------------------------------------------------- */
+/* Pantalla de 1366 x 768 aprox */ 
+@media screen and (max-width: 1367px) { 
+    /* Header */
+    .menu{
+        margin-left: 0;
+    }
+    /* Servicios */
+    .cardServicio{
+        width: 15rem;
+        padding: 8px;
+        margin: 16px;
+    }
+    .gridServicios{
+        margin: 6rem;
+        padding: 0.5rem;
+    }
+    /* Contacto */
+    .girdContact{
+        padding: 0.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "hijo1" 
+        "hijo2";
+        justify-items: center;
+    }
+    
+}
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    /* Servicios */
+    .gridServicios{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4";
+        gap: 1px 1px;
+    }
+    /* Galeria */
+    .gridGaleria{
+        border: 3px solid goldenrod;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        gap: 1px 1px;
+    }
+    /* about_me */
+    .imgaenPortadaSobreMi{
+        width: 375px;
+        height: 491px;
+    }
+    .imagenesTitulosSobreMi{
+        width: 703px;
+        height: 453px;
+    }
+    .descripcionSobreMi{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .mapaContactoTamanio{
+        width: 350px;
+        height: 350px;
+    }
+
+} 
+/* Movil */
+ @media screen and (max-width: 599px) {
+    /* Servicios */
+    .gridServicios{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+        gap: 1px 1px;
+        border: none;
+    }
+    /* Galeria */
+    .gridGaleria{
+        border: 3px solid goldenrod;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        gap: 1px 1px;
+    }
+    /* Header */
+    .menu{
+        flex-direction: column;
+        font-size: large;
+        margin-top: 0;
+        
+    }
+    .main{ 
+        margin-top: 300px;
+    }
+    /* about_me */
+    .imgaenPortadaSobreMi{
+        width: 250px;
+        height: 327px;
+    }
+    .imagenesTitulosSobreMi{
+        width: 425px;
+        height: 265px;
+    }
+    .descripcionSobreMi{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .titulosSobreMi{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+       /* Contacto */
+    .girdContact{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
+        grid-template-areas: 
+        "hijo1" 
+        "hijo2";
+        justify-items: center;
+        margin: auto;
+    } 
+
+    .mapaContactoTamanio{
+        width: 380px;
+        height: 350px;
+    }
+} 
+
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
