@@ -36,7 +36,7 @@ h1, h2, h3{
 /* -------------------------------Header---------------------------------- */
 /* ----------------------------------------------------------------------- */
 .header{
-    background-image: linear-gradient(to bottom, rgba(218, 172, 0, 0.7), rgb(197, 165, 8, 0.3964), rgba(255, 255, 255, 0.112));
+    background-image: linear-gradient(to bottom, rgba(218, 172, 0, 0.9), rgb(197, 165, 8, 0.9), rgba(255, 255, 255, 0.9));
     color: white;
     position: fixed;
     top: 0px;
@@ -341,7 +341,7 @@ h1, h2, h3{
     display: grid;
     border: 5px solid rgba(218, 165, 32, 0.396);
     border-radius: 1rem;
-    margin: 0rem;
+    margin: 4rem;
     padding: 1rem;
     height: auto;
     width: auto;
@@ -433,6 +433,11 @@ h1, h2, h3{
 /* -----------------------------Medias Querys----------------------------- */
 /* ----------------------------------------------------------------------- */
 /* Pantalla de 1366 x 768 aprox */ 
+@media screen and (max-width: 1440px) { 
+    .cardServicio{
+        margin: 5px;
+    }
+}
 @media screen and (max-width: 1367px) { 
     /* Header */
     .menu{
