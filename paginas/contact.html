@@ -12,28 +12,27 @@
     <!-- Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
     <header class="header flexbox" >
         <img class="header__logo" src="../imagenes/Logo.png" alt="logo"  width="240" height="200">
         <nav>
             <ul class="menu flexbox">
-                <li class="menu__index separacionMenu">
-                    <a href="../index.html">Inicio</a>
+                <li>
+                    <a href="../index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
                 </li>
-                <li class="menu__servicios separacionMenu">
-                    <a href="servicios.html">Servicios</a> 
+                <li>
+                    <a href="servicios.html" data-text="&nbsp;Servicios">&nbsp;Servicios&nbsp;</a> 
                 </li>
-                <li class="menu__galeria separacionMenu">
-                    <a href="galeria.html">Galeria</a>
+                <li>
+                    <a href="galeria.html" data-text="&nbsp;Galeria">&nbsp;Galeria&nbsp;</a>
                 </li>
-                <li class="menu__about_me separacionMenu">
-                    <a href="about_me.html">Sobre mi</a>
+                <li>
+                    <a href="about_me.html" data-text="&nbsp;Sobre Mi">&nbsp;Sobre Mi&nbsp;</a>
                 </li>
-                <li class="menu__contact separacionMenu">
-                    <a href="contact.html">Contacto</a>
+                <li>
+                    <a href="contact.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
                 </li>
             </ul>
         </nav>
@@ -45,23 +44,22 @@
             <div class="gridContactoHijo1">
                 <form>
                     <h1>Contacto</h1>
-                    <div class="card">
-                        <div class="card1Nombre">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                        </div>
-                        <div class="card1Mail ">
-                            <label for="mail">Email:</label>
-                            <input type="email" id="mail" name="email" placeholder="Ingrese su email" required>
-                        </div>
-                        <div class="card1Consulta">
-                            <label for="consulta">Ingrese su consulta</label>
-                            <textarea name="consulta" id="consulta" cols="25" rows="20" required></textarea>
-                        </div>
-                        <div class="card1Aceptar">
-                            <button class="btn btn-primary">Aceptar</button>
-                        </div>
+                    <div class="mb-3">
+                        <label for="nombreConsulta" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreConsulta" placeholder="Juan">
                     </div>
+                    <div class="mb-3">
+                        <label for="emailConsulta" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="emailConsulta" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="consultaConsulta" class="form-label">Ingrese su consulta</label>
+                        <textarea class="form-control" id="consultaConsulta" rows="8"></textarea>
+                    </div>
+                    <div class="centrarFlexboxRow">
+                        <a href="#" class="btn btn-primary">Enviar</a>
+                    </div>
+                    
                 </form>
             </div>
             <div  class="centrarFlexboxRow gridContactoHijo2">

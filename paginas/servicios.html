@@ -12,27 +12,26 @@
     <!-- Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header flexbox" >
         <img class="header__logo" src="../imagenes/Logo.png" alt="logo"  width="240" height="200">
         <nav>
             <ul class="menu flexbox">
-                <li class="menu__index separacionMenu">
-                    <a href="../index.html">Inicio</a>
+                <li>
+                    <a href="../index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
                 </li>
-                <li class="menu__servicios separacionMenu">
-                    <a href="servicios.html">Servicios</a> 
+                <li>
+                    <a href="servicios.html" data-text="&nbsp;Servicios">&nbsp;Servicios&nbsp;</a> 
                 </li>
-                <li class="menu__galeria separacionMenu">
-                    <a href="galeria.html">Galeria</a>
+                <li>
+                    <a href="galeria.html" data-text="&nbsp;Galeria">&nbsp;Galeria&nbsp;</a>
                 </li>
-                <li class="menu__about_me separacionMenu">
-                    <a href="about_me.html">Sobre mi</a>
+                <li>
+                    <a href="about_me.html" data-text="&nbsp;Sobre Mi">&nbsp;Sobre Mi&nbsp;</a>
                 </li>
-                <li class="menu__contact separacionMenu">
-                    <a href="contact.html">Contacto</a>
+                <li>
+                    <a href="contact.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
                 </li>
             </ul>
         </nav>
@@ -42,78 +41,47 @@
     <!-- Contenido de la pagina -->
 
     
-    <main class="main">
-        <div class="gridServicios">
-                <form class="gridServiciosCard1">
+        <main class="main">
+            <div class="gridServicios">
+                <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 1</h1>
-                    <div class="cardServicio ">
-                        <div class="cardServicioImagen">
-                            <img src="../imagenes/1.png" width="225" height="295" alt="Servicio1">
-                        </div>
-                        <div class="cardServicioNombre">
-                            <label for="nombre">Clases de automaquillaje</label>
-                        </div>
-                        <div class="cardServicioDescripcion">
-                            <label for="mail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate facere mollitia accusamus earum, commodi molestias! Consequuntur aliquam ab dolores obcaecati voluptatibus itaque adipisci mollitia officiis, quia impedit recusandae quod voluptate.</label>
-                        </div>
-                        <div class="cardServicioConsultar">
-                            <button>Consultar</button> <!-- La idea es que te lleve a consultas el botón -->
-                        </div>
+                    <img src="../imagenes/1.png" class="card-img-top tamanioImagenesServicios" alt="servicio1">
+                    <div class="card-body">
+                    <h5 class="card-title">Clases de automaquillaje</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet  elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo numquam.</p>
+                    <a href="#" class="btn btn-primary">Consultar</a>
                     </div>
-                </form>
-                <form class="gridServiciosCard2">
+                </div>
+                <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 2</h1>
-                    <div class="cardServicio ">
-                        <div class="cardServicioImagen">
-                            <img src="../imagenes/2.jpeg" width="225" height="295" alt="Servicio2">
-                        </div>
-                        <div class="cardServicioNombre">
-                            <label for="nombre">Servicio Invitada</label>
-                        </div>
-                        <div class="cardServicioDescripcion">
-                            <label for="mail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate facere mollitia accusamus earum, commodi molestias! Consequuntur aliquam ab dolores obcaecati voluptatibus itaque adipisci mollitia officiis, quia impedit recusandae quod voluptate.</label>
-                        </div>
-                        <div class="cardServicioConsultar">
-                            <button>Consultar</button> <!-- La idea es que te lleve a consultas el botón -->
-                        </div>
+                    <img src="../imagenes/2.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio2">
+                    <div class="card-body">
+                    <h5 class="card-title">Servicio Invitada</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
+                    <a href="#" class="btn btn-primary">Consultar</a>
                     </div>
-                </form>
-                <form class="gridServiciosCard3">
-                        <h1  class="tituloServicios">Servicio 3</h1> 
-                    <div class="cardServicio">
-                        <div class="cardServicioImagen">
-                            <img src="../imagenes/4.jpeg" width="225" height="295" alt="Servicio3">
-                        </div>
-                        <div class="cardServicioNombre">
-                            <label for="nombre">Cumpleañera/Novia</label>
-                        </div>
-                        <div class="cardServicioDescripcion">
-                            <label for="mail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate facere mollitia accusamus earum, commodi molestias! Consequuntur aliquam ab dolores obcaecati voluptatibus itaque adipisci mollitia officiis, quia impedit recusandae quod voluptate.</label>
-                        </div>
-                        <div class="cardServicioConsultar">
-                            <button>Consultar</button> <!-- La idea es que te lleve a consultas el botón -->
-                        </div>
+                </div>
+                <div class="cardPersonal bordeServicios tamanioCardServicios">
+                    <h1  class="tituloServicios">Servicio 3</h1>
+                    <img src="../imagenes/4.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio3">
+                    <div class="card-body">
+                    <h5 class="card-title">Cumpleañera/Novia</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
+                    <a href="#" class="btn btn-primary">Consultar</a>
                     </div>
-                </form>
-                <form class="gridServiciosCard4">
+                </div>
+                <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 4</h1>
-                    <div class="cardServicio">
-                        <div class="cardServicioImagen">
-                            <img src="../imagenes/7.jpeg" width="225" height="295" alt="Servicio4">
-                        </div>
-                        <div class="cardServicioNombre">
-                            <label for="nombre">Pieles maduras</label>
-                        </div>
-                        <div class="cardServicioDescripcion">
-                            <label for="mail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate facere mollitia accusamus earum, commodi molestias! Consequuntur aliquam ab dolores obcaecati voluptatibus itaque adipisci mollitia officiis, quia impedit recusandae quod voluptate.</label>
-                        </div>
-                        <div class="cardServicioConsultar">
-                            <button>Consultar</button> <!-- La idea es que te lleve a consultas el botón -->
-                        </div>
-                </form>
+                    <img src="../imagenes/7.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio4">
+                    <div class="card-body">
+                    <h5 class="card-title">Pieles maduras</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
+                    <a href="#" class="btn btn-primary">Consultar</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+
     <footer>
         <div  class="centrarFlexboxRow">
         <img src="../imagenes/Logo.png" alt="logo"  width="240" height="200">
