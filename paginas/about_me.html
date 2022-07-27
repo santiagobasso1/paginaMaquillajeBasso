@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ailen Makeup Sobre Mi</title>
+    <!-- AOS animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- CSS -->
@@ -42,12 +45,12 @@
 
     <!-- Contenido de la pagina -->
     <main class="main">
+      <div class="vibrate-1">>
         <h1 class="espaciadoSobreMi colorSobreMi">Sobre mi</h1>
+      </div>
         <div class="centrarFlexboxRow">
             <img class="img-fluid imgaenPortadaSobreMi" src="../imagenes/about_me_photo.png" alt="about_me">
         </div>
-
-
         <div class="espaciadoSobreMi accordion accordion-flush col-12 col-md-6 offset-md-3" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -122,7 +125,14 @@
             </iframe>
         </div>
     </footer>
-    <!-- Vinculando hoja de JS Local -->
-    <script src="../JS/bootstrap.bundle.js"></script>
+    <!-- Vinculando hoja de JS forma rapida CDN -->
+    <script src="./JS/bootstrap.bundle.js"></script>
+    <!-- Inserto AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicializo AOS -->
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

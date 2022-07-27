@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ailen Makeup Servicios</title>
+    <!-- AOS animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- CSS -->
@@ -44,26 +47,27 @@
         <main class="main">
             <div class="gridServicios">
                 <div class="cardPersonal bordeServicios tamanioCardServicios">
-                    <h1  class="tituloServicios">Servicio 1</h1>
-                    <img src="../imagenes/1.png" class="card-img-top tamanioImagenesServicios" alt="servicio1">
+                    <h1  class="tituloServicios ">Servicio 1</h1>
+                    <img src="../imagenes/1.png" class="card-img-top imagenesServicio" alt="servicio1">
                     <div class="card-body">
-                    <h5 class="card-title">Clases de automaquillaje</h5>
+                    <h5 class="card-title ">Clases de automaquillaje</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet  elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo numquam.</p>
                     <a href="#" class="btn btn-primary">Consultar</a>
                     </div>
                 </div>
                 <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 2</h1>
-                    <img src="../imagenes/2.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio2">
+                    <img src="../imagenes/2.jpeg" class="card-img-top imagenesServicio" alt="servicio2">
                     <div class="card-body">
                     <h5 class="card-title">Servicio Invitada</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
                     <a href="#" class="btn btn-primary">Consultar</a>
+                    
                     </div>
                 </div>
                 <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 3</h1>
-                    <img src="../imagenes/4.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio3">
+                    <img src="../imagenes/4.jpeg" class="card-img-top imagenesServicio" alt="servicio3">
                     <div class="card-body">
                     <h5 class="card-title">Cumpleañera/Novia</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
@@ -72,7 +76,7 @@
                 </div>
                 <div class="cardPersonal bordeServicios tamanioCardServicios">
                     <h1  class="tituloServicios">Servicio 4</h1>
-                    <img src="../imagenes/7.jpeg" class="card-img-top tamanioImagenesServicios" alt="servicio4">
+                    <img src="../imagenes/7.jpeg" class="card-img-top imagenesServicio" alt="servicio4">
                     <div class="card-body">
                     <h5 class="card-title">Pieles maduras</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas et, explicabo debitis natus quasi laudantium impedit rem velit, repudiandae consectetur dolorem ab repellendus nemo ipsam illo voluptatem officiis numquam.</p>
@@ -105,7 +109,13 @@
             </iframe>
         </div>
     </footer>
-    <!-- Vinculando hoja de JS Local -->
-    <script src="../JS/bootstrap.bundle.js"></script>
+    <!-- Vinculando hoja de JS forma rapida CDN -->
+    <script src="./JS/bootstrap.bundle.js"></script>
+    <!-- Inserto AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicializo AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
