@@ -75,6 +75,11 @@ h1, h2, h3{
     box-sizing: border-box;
 }
 
+.header__logo{
+    width: 240px;
+    height: 200px;
+}
+
 .menu{
     font-size: large;
     margin-left: 250px;
@@ -204,16 +209,7 @@ footer{
 /* ----------------------------------------------------------------------- */
 /* -------------------------------Contact Page---------------------------- */
 /* ----------------------------------------------------------------------- */
-.cardPersonal{
-    background-color: white;
-    color: black;
-    width: 18rem;
-    height: auto;
-    padding: 16px;
-    margin: 32px;
-    overflow: auto;
-    border-radius: 20px;
-}
+
 
 .card1Nombre{
     padding: 10px;
@@ -359,12 +355,11 @@ footer{
     background-color: white;
     grid-area: img6;
     object-fit: cover;
-} */
+} */	
 
 .imagenesGaleria{
-    height: 295px;
-    width: 225px;
-
+    height: 225px;
+    width: 295px;
 } 
 
 .tamanioTextoGaleria{
@@ -421,7 +416,16 @@ footer{
     overflow: hidden;
 } */
 
-
+.cardPersonalServicios{
+    background-color: white;
+    color: black;
+    width: 18rem;
+    height: 38rem;
+    padding: 16px;
+    margin: 32px;
+    overflow: auto;
+    border-radius: 20px;
+}
 
 .tituloServicios{
     color: goldenrod;
@@ -429,7 +433,6 @@ footer{
 
 .gridServicios{
     display: grid;
-    border: 5px solid rgba(218, 165, 32, 0.396);
     border-radius: 1rem;
     margin: 4rem;
     padding: 1rem;
@@ -491,7 +494,7 @@ footer{
 }
 
 .imagenIndex{
-    height: 800px;
+    height: 885px;
 }
 
 
@@ -584,7 +587,19 @@ footer{
         margin-left: 0;
     }
 }
+@media screen and (max-width: 1400px) { 
+
+}
+
 @media screen and (max-width: 1367px) { 
+    .gridServicios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+        gap: 1px 1px;
+    }
     /* Header */
     ul{
         gap: 20px;
@@ -620,35 +635,47 @@ footer{
 
 
 
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .imagenIndex{
+        height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
 /* Tablet */
 @media screen and (max-width: 1024px) {
-    /* Servicios */
+    .header__logo{
+        width: 200px;
+        height: 160px;    
+    }
+    
     .imagenIndex{
-        height: 700px;
+        height: 400px;
     }
     ul li a::before{
         border-right: 4px solid goldenrod;
     }
     ul li a{
-        font-size: 25px;
+        font-size: 21px;
     }
-    .gridServicios{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
-        grid-template-areas: 
-        "card1 card2"
-        "card3 card4";
-        gap: 1px 1px;
-    }
-    /* Galeria */
-    .imagenesGaleria{
-        height: 245px;
-        width: 175px;
-    } 
+
+
     
     .tamanioTextoGaleria{
         font-size: small;
     }
+
     .gridGaleria{
         border: 3px solid goldenrod;
         grid-template-columns: repeat(2, 1fr);
@@ -678,17 +705,17 @@ footer{
     }
 
 } 
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
-    /* Galeria */
-    .imagenesGaleria{
-        height: 295px;
-        width: 125px;
-    } 
-    
-    .tamanioTextoGaleria{
-        font-size: small;
-    }
-    /* Menu */
+
     .imagenIndex{
         height: 500px;
     }
@@ -702,12 +729,45 @@ footer{
         font-size: 16px;
     }
 }
+
+
 /* Movil */
  @media screen and (max-width: 599px) {
-    .imagenesGaleria{
-        height: 195px;
-        width: 125px;
-    } 
+    .header{
+        background-image: black;
+    }
+    
+    .menu{
+        font-size: small;
+        margin-left: 0;
+    }
+    
+    
+    ul li{
+        position: relative;
+        list-style: none;
+    }
+    ul li a{
+        font-size: 20px;
+        color: black;
+        -webkit-text-stroke: 1px transparent;
+    }
+    
+    ul li a::before{
+        content: attr(data-text);
+        position: absolute;
+        color: goldenrod;
+        width: 0;
+        overflow: hidden;
+        transition: none;
+        border-right: none;
+        --webkit-text-stroke: none;
+    }
+    
+    ul li a:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 25px goldenrod);
+    }
     /* Servicios */
     .gridServicios{
         grid-template-columns: repeat(1, 1fr);
@@ -720,19 +780,10 @@ footer{
         gap: 1px 1px;
         border: none;
     }
-    /* Galeria */
-    .gridGaleria{
-        border: 3px solid goldenrod;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr); /* Fracciones de la seccion total */
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6";
-        gap: 1px 1px;
+
+    
+    .tamanioTextoGaleria{
+        font-size: medium;
     }
     /* Header */
     .menu{
@@ -777,6 +828,7 @@ footer{
         height: 350px;
     }
 } 
+
 
 
 
