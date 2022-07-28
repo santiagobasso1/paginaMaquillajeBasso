@@ -279,6 +279,12 @@ footer{
 /* -------------------------------Galeria Page---------------------------- */
 /* ----------------------------------------------------------------------- */
 
+
+.card{
+    border: 1px solid goldenrod;
+}
+
+
 /* .cardGaleria{
     background-color: white;
     color: black;
@@ -369,6 +375,7 @@ footer{
 .bordeGaleria{
     border: 1px solid goldenrod;
 }
+
 
 
 /* ----------------------------------------------------------------------- */
@@ -573,8 +580,6 @@ footer{
 
 
 
-
-
 /* ----------------------------------------------------------------------- */
 /* -----------------------------Medias Querys----------------------------- */
 /* ----------------------------------------------------------------------- */
@@ -587,9 +592,22 @@ footer{
         margin-left: 0;
     }
 }
-@media screen and (max-width: 1400px) { 
 
+
+
+
+
+
+@media screen and (max-width: 1400px) { 
+    .card{
+        border: none;
+    }
 }
+
+
+
+
+
 
 @media screen and (max-width: 1367px) { 
     .gridServicios {
@@ -694,6 +712,7 @@ footer{
     .imagenesTitulosSobreMi{
         width: 703px;
         height: 453px;
+        margin: 1rem;
     }
     .descripcionSobreMi{
         margin-left: 20%;
@@ -731,6 +750,13 @@ footer{
 }
 
 
+
+
+
+
+
+
+
 /* Movil */
  @media screen and (max-width: 599px) {
     .header{
@@ -738,6 +764,9 @@ footer{
     }
     
     .menu{
+        flex-direction: column;
+        font-size: large;
+        margin-top: 12px;
         font-size: small;
         margin-left: 0;
     }
@@ -786,12 +815,7 @@ footer{
         font-size: medium;
     }
     /* Header */
-    .menu{
-        flex-direction: column;
-        font-size: large;
-        margin-top: 0;
-        
-    }
+
     .main{ 
         margin-top: 300px;
     }
@@ -820,12 +844,14 @@ footer{
         "hijo1" 
         "hijo2";
         justify-items: center;
-        margin: auto;
+        margin: 3px;
     } 
+
 
     .mapaContactoTamanio{
         width: 380px;
         height: 350px;
+        margin: 6px;
     }
 } 
 
