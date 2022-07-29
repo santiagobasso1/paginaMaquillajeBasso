@@ -1,0 +1,36 @@
+.titulosSobreMi{
+    border: 3px solid $colorPrincipal;
+    display: flex;
+    justify-content: center;
+    margin: 40%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.colorSobreMi{
+    color: $colorPrincipal;
+}
+
+.espaciadoSobreMi{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.descripcionSobreMi{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 3px solid $colorPrincipal;
+    border-radius: 9px;
+}
+
+.imgaenPortadaSobreMi{
+    width: 450px;
+    height: 590px;
+}
+
+.imagenesTitulosSobreMi{
+    width: 1000px;
+    height: 700px;
+}

@@ -1,0 +1,61 @@
+.card1Nombre{
+    padding: 10px;
+}
+
+.card1Mail{
+    padding: 10px;
+}
+
+.card1Consulta{
+    padding: 10px;
+}
+
+.card1Aceptar{
+    display: flex;
+    justify-content: center;
+}
+
+.fondoBlanco{
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+
+.girdContact{
+    display: grid;
+    border: 5px solid rgba(218, 165, 32, 0.396);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 12rem;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
+    grid-template-areas: 
+    "hijo1 hijo2";
+    gap: 3px 3px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: $colorPrincipal;
+}
+
+.gridContactoHijo1{
+    background-color: $colorPrincipal;
+    grid-area: hijo1;
+    display: flex;
+    flex-direction: row;
+}
+.gridContactoHijo2{
+    background-color: white;
+    grid-area: hijo2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapaContactoTamanio{
+    width: 400px;
+    height: 480px;
+}
+
