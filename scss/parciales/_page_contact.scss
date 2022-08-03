@@ -20,11 +20,8 @@
     border-radius: 30px;
 }
 
-
-
 .girdContact{
     display: grid;
-    border: 5px solid rgba(218, 165, 32, 0.396);
     border-radius: 1rem;
     padding: 1rem;
     margin: 12rem;
@@ -38,11 +35,9 @@
     align-items: center;
     justify-items: center;
     justify-content: center;
-    background-color: $colorPrincipal;
 }
 
 .gridContactoHijo1{
-    background-color: $colorPrincipal;
     grid-area: hijo1;
     display: flex;
     flex-direction: row;
@@ -55,6 +50,7 @@
 }
 
 .mapaContactoTamanio{
+    margin-top: 10rem;
     width: 400px;
     height: 480px;
 }

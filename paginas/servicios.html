@@ -17,28 +17,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header class="header flexbox" >
-        <img class="header__logo" src="../imagenes/Logo.png" alt="logo">
-        <nav>
-            <ul class="menu flexbox">
-                <li>
-                    <a href="../index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
-                </li>
-                <li>
-                    <a href="servicios.html" data-text="&nbsp;Servicios">&nbsp;Servicios&nbsp;</a> 
-                </li>
-                <li>
-                    <a href="galeria.html" data-text="&nbsp;Galeria">&nbsp;Galeria&nbsp;</a>
-                </li>
-                <li>
-                    <a href="about_me.html" data-text="&nbsp;Sobre Mi">&nbsp;Sobre Mi&nbsp;</a>
-                </li>
-                <li>
-                    <a href="contact.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar header navbar-expand-sm navbar-light ">
+            <div class="container-fluid">
+                    <img class="navbar-brand header__logo" src="../imagenes/Logo.png" alt="logo" href="javascript:void(0)">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html" data-text="&nbsp;Servicios">&nbsp;Servicios&nbsp;</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html" data-text="&nbsp;Galeria">&nbsp;Galeria&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_me.html" data-text="&nbsp;Sobre Mi">&nbsp;Sobre Mi&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
+      </header>
 
 
     <!-- Contenido de la pagina -->

@@ -23,6 +23,13 @@
 .separacionMenu{
     margin: 10px;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+
+
+
 /* Utilizo & que llama al padre mas cercano*/
 ul{
     position: relative;

@@ -97,6 +97,9 @@ h1, h2, h3 {
 .separacionMenu {
   margin: 10px; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0) !important; }
+
 /* Utilizo & que llama al padre mas cercano*/
 ul {
   position: relative;
@@ -188,7 +191,6 @@ ul {
 
 .girdContact {
   display: grid;
-  border: 5px solid rgba(218, 165, 32, 0.396);
   border-radius: 1rem;
   padding: 1rem;
   margin: 12rem;
@@ -201,11 +203,9 @@ ul {
   gap: 3px 3px;
   align-items: center;
   justify-items: center;
-  justify-content: center;
-  background-color: goldenrod; }
+  justify-content: center; }
 
 .gridContactoHijo1 {
-  background-color: goldenrod;
   grid-area: hijo1;
   display: flex;
   flex-direction: row; }
@@ -217,6 +217,7 @@ ul {
   overflow: hidden; }
 
 .mapaContactoTamanio {
+  margin-top: 10rem;
   width: 400px;
   height: 480px; }
 
@@ -346,32 +347,19 @@ ul {
     height: 350px; } }
 
 @media screen and (max-width: 768px) {
-  .imagenIndex {
-    height: 500px; }
+  .header__logo {
+    width: 166px;
+    height: 133px; }
   ul {
-    gap: 5px; }
-  ul li a::before {
-    border-right: 4px solid goldenrod; }
-  ul li a {
-    font-size: 16px; } }
-
-/* Movil */
-@media screen and (max-width: 599px) {
-  .header {
-    background-image: black; }
-  .menu {
-    flex-direction: column;
-    font-size: large;
-    margin-top: 12px;
-    font-size: small;
-    margin-left: 0; }
+    gap: 0px; }
   ul li {
     position: relative;
     list-style: none; }
   ul li a {
     font-size: 20px;
     color: black;
-    -webkit-text-stroke: 1px transparent; }
+    -webkit-text-stroke: 1px transparent;
+    font-size: 16px; }
   ul li a::before {
     content: attr(data-text);
     position: absolute;
@@ -383,7 +371,15 @@ ul {
     --webkit-text-stroke: none; }
   ul li a:hover::before {
     width: 100%;
-    filter: drop-shadow(0 0 25px goldenrod); }
+    filter: drop-shadow(0 0 25px goldenrod);
+    border-right: 4px solid goldenrod; }
+  .navbar-light .navbar-nav .nav-link {
+    color: black !important; }
+  .imagenIndex {
+    height: 500px; } }
+
+/* Movil */
+@media screen and (max-width: 599px) {
   /* Servicios */
   .gridServicios {
     grid-template-columns: repeat(1, 1fr);
@@ -419,4 +415,10 @@ ul {
   .mapaContactoTamanio {
     width: 380px;
     height: 350px;
+    margin: 6px; } }
+
+@media screen and (max-width: 400px) {
+  .mapaContactoTamanio {
+    width: 330px;
+    height: 300px;
     margin: 6px; } }
