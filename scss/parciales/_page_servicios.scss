@@ -1,25 +1,22 @@
 .cardPersonalServicios{
     background-color: white;
     color: black;
-    width: 18rem;
-    height: 38rem;
+    @include TamanioWidthHeightMargin(18rem, 38rem, 32px);
     padding: 16px;
-    margin: 32px;
     overflow: auto;
     border-radius: 20px;
 }
 
 .tituloServicios{
-    color: $colorPrincipal;
+    color: map-get($mapaColores, principal);
+    text-align: center;
 }
 
 .gridServicios{
     display: grid;
     border-radius: 1rem;
-    margin: 4rem;
+    @include TamanioWidthHeightMargin(auto, auto, 4rem);
     padding: 1rem;
-    height: auto;
-    width: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
     gap: 3px 3px;
@@ -37,5 +34,18 @@
 
 
 .bordeServicios{
-    border: 4px solid $colorPrincipal;
+    border: 4px solid map-get($mapaColores, principal);
+}
+.botonServicios{
+position: relative;
+top: -1px;
+color: white;
+background-color: goldenrod;
+border-color: goldenrod;
+}
+
+.botonServicios:hover {
+    color: black;
+    background-color: goldenrod;
+    border-color: goldenrod;
 }

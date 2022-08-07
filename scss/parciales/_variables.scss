@@ -1,2 +1,37 @@
-$colorPrincipal: goldenrod;
 $colorFondo: white;
+$DesktopL: 1400px;
+$DesktopM: 1367px;
+$TabletXL: 1200px;
+$TabletL: 1024px;
+$TabletM: 768px;
+$MovileL: 599px;
+$MovileS: 400px;
+
+
+/* Mixins */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+@mixin TamanioWidthHeightMargin ($width, $height, $margin) {
+    width: $width;
+    height: $height;
+    margin: $margin;   
+}
+
+/* Mapas */
+
+$mapaH1H2H3: (
+    h1: black,
+    h2: rgb(73, 1, 73),
+    h3: black
+);
+
+$mapaColores: (
+    principal: goldenrod,
+    texto: black,
+    fondo: white
+);

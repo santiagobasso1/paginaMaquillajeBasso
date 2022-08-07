@@ -3,11 +3,11 @@
 }
 
 .card1Mail{
-    padding: 10px;
+    @extend .card1Nombre;
 }
 
 .card1Consulta{
-    padding: 10px;
+    @extend .card1Nombre;
 }
 
 .card1Aceptar{
@@ -24,9 +24,7 @@
     display: grid;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 12rem;
-    height: auto;
-    width: auto;
+    @include TamanioWidthHeightMargin(auto, auto, 12rem);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
     grid-template-areas: 

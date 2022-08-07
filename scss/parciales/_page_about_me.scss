@@ -1,5 +1,5 @@
 .titulosSobreMi{
-    border: 3px solid $colorPrincipal;
+    border: 3px solid map-get($mapaColores, principal);
     display: flex;
     justify-content: center;
     margin: 40%;
@@ -8,7 +8,7 @@
 }
 
 .colorSobreMi{
-    color: $colorPrincipal;
+    color: map-get($mapaColores, principal);
 }
 
 .espaciadoSobreMi{
@@ -21,7 +21,7 @@
     background-color: white;
     margin-left: 30%;
     margin-right: 30%;
-    border: 3px solid $colorPrincipal;
+    border: 3px solid map-get($mapaColores, principal);
     border-radius: 9px;
 }
 

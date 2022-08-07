@@ -12,7 +12,7 @@
 
 
 
-@media screen and (max-width: 1400px) { 
+@media screen and (max-width: $DesktopL) { 
     .card{
         border: none;
     }
@@ -23,7 +23,7 @@
 
 
 
-@media screen and (max-width: 1367px) { 
+@media screen and (max-width: $DesktopM) { 
     .gridServicios {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -44,6 +44,7 @@
     }
     /* Servicios */
     .cardServicio{
+        
         width: 15rem;
         padding: 8px;
         margin: 16px;
@@ -71,7 +72,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $TabletXL) {
     .imagenIndex{
         height: 600px;
     }
@@ -86,7 +87,7 @@
 
 
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $TabletL) {
     .header__logo{
         width: 200px;
         height: 160px;    
@@ -96,7 +97,7 @@
         height: 400px;
     }
     ul li a::before{
-        border-right: 4px solid $colorPrincipal;
+        border-right: 4px solid map-get($mapaColores, principal);
     }
     ul li a{
         font-size: 21px;
@@ -109,7 +110,7 @@
     }
 
     .gridGaleria{
-        border: 3px solid $colorPrincipal;
+        border: 3px solid map-get($mapaColores, principal);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr); 
         grid-template-areas: 
@@ -124,9 +125,7 @@
         height: 491px;
     }
     .imagenesTitulosSobreMi{
-        width: 703px;
-        height: 453px;
-        margin: 1rem;
+        @include TamanioWidthHeightMargin(703px, 453px, 1rem);
     }
     .descripcionSobreMi{
         margin-left: 20%;
@@ -141,7 +140,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $TabletM) {
     .header__logo{
         width: 166px;
         height: 133px;    
@@ -163,7 +162,7 @@
     ul li a::before{
         content: attr(data-text);
         position: absolute;
-        color: $colorPrincipal;
+        color: map-get($mapaColores, principal);
         width: 0;
         overflow: hidden;
         transition: none;
@@ -173,8 +172,8 @@
     
     ul li a:hover::before{
         width: 100%;
-        filter: drop-shadow(0 0 25px $colorPrincipal);
-        border-right: 4px solid $colorPrincipal;
+        filter: drop-shadow(0 0 25px map-get($mapaColores, principal));
+        border-right: 4px solid map-get($mapaColores, principal);
     }
     
     .navbar-light .navbar-nav .nav-link {
@@ -195,9 +194,8 @@
 
 
 
-
 /* Movil */
- @media screen and (max-width: 599px) {
+ @media screen and (max-width: $MovileL) {
 
     
     /* Servicios */
@@ -252,17 +250,13 @@
 
 
     .mapaContactoTamanio{
-        width: 380px;
-        height: 350px;
-        margin: 6px;
+        @include TamanioWidthHeightMargin(380px, 350px, 6px);
     }
 } 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $MovileS) {
     .mapaContactoTamanio{
-        width: 330px;
-        height: 300px;
-        margin: 6px;
+        @include TamanioWidthHeightMargin(330, 300px, 4px);
     }
 }
 

@@ -50,16 +50,16 @@ ul{
         & a::before{
             content: attr(data-text);
             position: absolute;
-            color: $colorPrincipal;
+            color: map-get($mapaColores, principal);
             width: 0;
             overflow: hidden;
             transition: 1s;
-            border-right: 8px solid $colorPrincipal;
-            --webkit-text-stroke: 1px $colorPrincipal;
+            border-right: 8px solid map-get($mapaColores, principal);
+            --webkit-text-stroke: 1px map-get($mapaColores, principal);
         }
         & a:hover::before{
             width: 100%;
-            filter: drop-shadow(0 0 25px $colorPrincipal);
+            filter: drop-shadow(0 0 25px map-get($mapaColores, principal));
         }
         
     }

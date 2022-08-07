@@ -11,22 +11,16 @@ main{
     font-size: xx-large;
 }
 
-h1{
-    color: black;
-}
-
-h2{
-    color: rgb(73, 1, 73);
-}
-h1, h2, h3{
-    text-align: center; 
+@each $nombre, $valor in $mapaH1H2H3 {
+    .#{$nombre}{
+        color:$valor;
+        text-align: center;
+    }
 }
 
 .textCenter{ 
     text-align: center
 }
-
-
 
 /* ---------------------------Flexbox General----------------------------- */
 .flexbox {
@@ -34,20 +28,17 @@ h1, h2, h3{
 }
 
 .centrarFlexboxRow{
-    display: flex;
+    @include flexCenter;
     flex-direction: row;
-    justify-content: center;
 }
 
 .centrarFlexboxColumn{
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    justify-content: center;
 }
 
 .centrarFlexboxTextRow{
-    display: flex;
+    @include flexCenter;
     flex-direction: row;
-    text-align: center;
 }
 

@@ -1,5 +1,5 @@
 .card{
-    border: 1px solid $colorPrincipal;
+    border: 1px solid map-get($mapaColores, principal);
 }
 
 .imagenesGaleria{
@@ -12,5 +12,5 @@
 }
 
 .bordeGaleria{
-    border: 1px solid $colorPrincipal;
+    border: 1px solid map-get($mapaColores, principal);
 }
