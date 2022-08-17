@@ -256,7 +256,7 @@
 
 @media screen and (max-width: $MovileS) {
     .mapaContactoTamanio{
-        @include TamanioWidthHeightMargin(330, 300px, 4px);
+        @include TamanioWidthHeightMargin(100%, 250px, 4px);
     }
     .imagenIndex{
         height: 425px;

@@ -433,8 +433,8 @@ ul {
 
 @media screen and (max-width: 400px) {
   .mapaContactoTamanio {
-    width: 330;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     margin: 4px; }
   .imagenIndex {
     height: 425px; } }
