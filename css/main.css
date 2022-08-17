@@ -144,7 +144,7 @@ ul {
   border: 4px solid goldenrod; }
 
 .imagenIndex {
-  height: 885px; }
+  height: 785px; }
 
 .main {
   margin-top: 230px; }
@@ -435,4 +435,6 @@ ul {
   .mapaContactoTamanio {
     width: 330;
     height: 300px;
-    margin: 4px; } }
+    margin: 4px; }
+  .imagenIndex {
+    height: 425px; } }

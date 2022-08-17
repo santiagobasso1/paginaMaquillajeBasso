@@ -258,6 +258,10 @@
     .mapaContactoTamanio{
         @include TamanioWidthHeightMargin(330, 300px, 4px);
     }
+    .imagenIndex{
+        height: 425px;
+    }
+    
 }
 
 
