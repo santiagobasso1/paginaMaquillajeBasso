@@ -119,7 +119,6 @@
         "img5 img6";
         gap: 1px 1px;
     }
-    /* about_me */
     .imgaenPortadaSobreMi{
         width: 375px;
         height: 491px;
@@ -127,13 +126,9 @@
     .imagenesTitulosSobreMi{
         @include TamanioWidthHeightMargin(703px, 453px, 1rem);
     }
-    .descripcionSobreMi{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
     .mapaContactoTamanio{
-        width: 350px;
-        height: 350px;
+        width: 700px;
+        height: 500px;
     }
 
 } 
@@ -183,7 +178,9 @@
         height: 500px;
     }
 
-
+    .main{
+        margin-top: 170px;
+    }
 }
 
 
@@ -229,10 +226,6 @@
         width: 425px;
         height: 265px;
     }
-    .descripcionSobreMi{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
     .titulosSobreMi{
         margin-left: 5%;
         margin-right: 5%;
@@ -261,7 +254,12 @@
     .imagenIndex{
         height: 425px;
     }
-    
+    .imagenesTitulosSobreMi
+    {
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+    }
 }
 
 

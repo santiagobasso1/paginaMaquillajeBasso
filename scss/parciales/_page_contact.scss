@@ -1,5 +1,11 @@
+.cardTitulo{
+    color: map-get($mapaColores, principal);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 .card1Nombre{
-    padding: 10px;
+    padding-top: 1rem;
 }
 
 .card1Mail{
@@ -17,19 +23,17 @@
 
 .fondoBlanco{
     background-color: white;
-    border-radius: 30px;
 }
 
 .girdContact{
     display: grid;
-    border-radius: 1rem;
     padding: 1rem;
     @include TamanioWidthHeightMargin(auto, auto, 12rem);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr); /* Fracciones de la seccion total */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Fracciones de la seccion total */
     grid-template-areas: 
-    "hijo1 hijo2";
-    gap: 3px 3px;
+    "hijo1" 
+    "hijo2";
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -49,7 +53,6 @@
 
 .mapaContactoTamanio{
     margin-top: 10rem;
-    width: 400px;
-    height: 480px;
+    width: 900px;
+    height: 700px;
 }
-

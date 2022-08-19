@@ -1,10 +1,6 @@
 .titulosSobreMi{
-    border: 3px solid map-get($mapaColores, principal);
     display: flex;
     justify-content: center;
-    margin: 40%;
-    border-radius: 30px;
-    background-color: white;
 }
 
 .colorSobreMi{
@@ -17,20 +13,14 @@
 }
 
 
-.descripcionSobreMi{
-    background-color: white;
-    margin-left: 30%;
-    margin-right: 30%;
-    border: 3px solid map-get($mapaColores, principal);
-    border-radius: 9px;
-}
 
 .imgaenPortadaSobreMi{
-    width: 450px;
-    height: 590px;
+    width: 375px;
+    height: 491px;
 }
 
 .imagenesTitulosSobreMi{
     width: 1000px;
     height: 700px;
 }
+

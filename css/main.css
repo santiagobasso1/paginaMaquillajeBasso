@@ -101,8 +101,7 @@ main {
 
 .menu {
   font-size: large;
-  margin-left: 250px;
-  margin-top: 100px;
+  margin-left: 10%;
   list-style: none; }
 
 .separacionMenu {
@@ -146,16 +145,17 @@ ul {
 .imagenIndex {
   height: 785px; }
 
+.navBarPersonalizacion {
+  position: absolute;
+  top: 0;
+  margin-left: 6rem; }
+
 .main {
   margin-top: 230px; }
 
 .titulosSobreMi {
-  border: 3px solid goldenrod;
   display: flex;
-  justify-content: center;
-  margin: 40%;
-  border-radius: 30px;
-  background-color: white; }
+  justify-content: center; }
 
 .colorSobreMi {
   color: goldenrod; }
@@ -164,44 +164,40 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-.descripcionSobreMi {
-  background-color: white;
-  margin-left: 30%;
-  margin-right: 30%;
-  border: 3px solid goldenrod;
-  border-radius: 9px; }
-
 .imgaenPortadaSobreMi {
-  width: 450px;
-  height: 590px; }
+  width: 375px;
+  height: 491px; }
 
 .imagenesTitulosSobreMi {
   width: 1000px;
   height: 700px; }
 
+.cardTitulo {
+  color: goldenrod;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
 .card1Nombre, .card1Mail, .card1Consulta {
-  padding: 10px; }
+  padding-top: 1rem; }
 
 .card1Aceptar {
   display: flex;
   justify-content: center; }
 
 .fondoBlanco {
-  background-color: white;
-  border-radius: 30px; }
+  background-color: white; }
 
 .girdContact {
   display: grid;
-  border-radius: 1rem;
   padding: 1rem;
   width: auto;
   height: auto;
   margin: 12rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   /* Fracciones de la seccion total */
-  grid-template-areas: "hijo1 hijo2";
-  gap: 3px 3px;
+  grid-template-areas: "hijo1"  "hijo2";
   align-items: center;
   justify-items: center;
   justify-content: center; }
@@ -219,8 +215,8 @@ ul {
 
 .mapaContactoTamanio {
   margin-top: 10rem;
-  width: 400px;
-  height: 480px; }
+  width: 900px;
+  height: 700px; }
 
 .card {
   border: 1px solid goldenrod; }
@@ -345,7 +341,6 @@ ul {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
     gap: 1px 1px; }
-  /* about_me */
   .imgaenPortadaSobreMi {
     width: 375px;
     height: 491px; }
@@ -353,12 +348,9 @@ ul {
     width: 703px;
     height: 453px;
     margin: 1rem; }
-  .descripcionSobreMi {
-    margin-left: 20%;
-    margin-right: 20%; }
   .mapaContactoTamanio {
-    width: 350px;
-    height: 350px; } }
+    width: 700px;
+    height: 500px; } }
 
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -390,7 +382,9 @@ ul {
   .navbar-light .navbar-nav .nav-link {
     color: black !important; }
   .imagenIndex {
-    height: 500px; } }
+    height: 500px; }
+  .main {
+    margin-top: 170px; } }
 
 /* Movil */
 @media screen and (max-width: 599px) {
@@ -413,9 +407,6 @@ ul {
   .imagenesTitulosSobreMi {
     width: 425px;
     height: 265px; }
-  .descripcionSobreMi {
-    margin-left: 10%;
-    margin-right: 10%; }
   .titulosSobreMi {
     margin-left: 5%;
     margin-right: 5%; }
@@ -437,4 +428,8 @@ ul {
     height: 250px;
     margin: 4px; }
   .imagenIndex {
-    height: 425px; } }
+    height: 425px; }
+  .imagenesTitulosSobreMi {
+    width: 100%;
+    margin: 0px;
+    padding: 5px; } }
