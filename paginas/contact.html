@@ -57,22 +57,22 @@
     <main class="main">
         <div class="girdContact">
             <div class="gridContactoHijo1">
-                <form>
+                <form action="../php/enviar.php" method="post">
                     <h1 class="cardTitulo">Contacto</h1>
                     <div class="mb-3">
-                        <label for="nombreConsulta" class="form-label card1Nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombreConsulta" placeholder="Juan">
+                        <label for="nombre" class="form-label card1Nombre">Nombre:</label>
+                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Juan" required>
                     </div>
                     <div class="mb-3">
-                        <label for="emailConsulta" class="form-label card1Mail">Email:</label>
-                        <input type="email" class="form-control" id="emailConsulta" placeholder="name@example.com">
+                        <label for="correo" class="form-label card1Mail">Email:</label>
+                        <input type="email" name="correo" class="form-control" id="correo" placeholder="name@example.com" required>
                     </div>
                     <div class="mb-3">
-                        <label for="consultaConsulta" class="form-label card1Consulta">Ingrese su consulta:</label>
-                        <textarea class="form-control" id="consultaConsulta" rows="15" cols="50"></textarea>
+                        <label for="mensaje" class="form-label card1Consulta">Ingrese su consulta:</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" rows="15" cols="50" required></textarea>
                     </div>
                     <div class="centrarFlexboxRow">
-                        <a href="#" class="btn btn-primary">Enviar</a>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                     
                 </form>
@@ -102,7 +102,7 @@
         </div>
          <!-- Whatsapp -->
          <div class="whatsapp">
-            <a href="https://www.whatsapp.com/?lang=es"  target="_blank" >
+            <a href="https://wa.me/5493624946475"  target="_blank" >
                 <img src="../imagenes/Whatsapp.png" width="50px" height="50px" alt="whatsapp">
             </iframe>
         </div>
