@@ -57,23 +57,30 @@
     <main class="main">
         <div class="girdContact">
             <div class="gridContactoHijo1">
-                <form action="../php/enviar.php" method="post">
+                <form action="https://formsubmit.co/santiagobasso@hotmail.com" method="POST">
                     <h1 class="cardTitulo">Contacto</h1>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label card1Nombre">Nombre:</label>
-                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Juan" required>
+                        <label for="Nombre" class="form-label card1Nombre">Nombre:</label>
+                        <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Ingrese su nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="correo" class="form-label card1Mail">Email:</label>
-                        <input type="email" name="correo" class="form-control" id="correo" placeholder="name@example.com" required>
+                        <label for="Telefono" class="form-label card1Phone">Contacto:</label>
+                        <input type="text" name="Telefono" class="form-control" id="Telefono" placeholder="Ingrese su numero" required>
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label card1Consulta">Ingrese su consulta:</label>
-                        <textarea class="form-control" name="mensaje" id="mensaje" rows="15" cols="50" required></textarea>
+                        <label for="Correo" class="form-label card1Mail">Email:</label>
+                        <input type="email" name="Correo" class="form-control" id="Correo" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Mensaje" class="form-label card1Consulta">Ingrese su consulta:</label>
+                        <textarea class="form-control" name="Mensaje" id="Mensaje" rows="15" cols="50" required></textarea>
                     </div>
                     <div class="centrarFlexboxRow">
                         <button type="submit" class="btn btn-primary">Enviar</button>
+                      
                     </div>
+                    <input type="hidden" name="_next" value="http://www.ailenmakeup.com.ar/paginas/consultaEnviada.html">
+                    <input type="hidden" name="_captcha" value="false">
                     
                 </form>
             </div>
