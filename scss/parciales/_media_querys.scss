@@ -119,10 +119,7 @@
         "img5 img6";
         gap: 1px 1px;
     }
-    .imgaenPortadaSobreMi{
-        width: 375px;
-        height: 491px;
-    }
+
     .imagenesTitulosSobreMi{
         @include TamanioWidthHeightMargin(703px, 453px, 1rem);
     }

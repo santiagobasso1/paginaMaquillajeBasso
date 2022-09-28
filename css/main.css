@@ -166,7 +166,9 @@ ul {
 
 .imgaenPortadaSobreMi {
   width: 375px;
-  height: 491px; }
+  height: 650px;
+  border: hidden;
+  border-radius: 1rem; }
 
 .imagenesTitulosSobreMi {
   width: 1000px;
@@ -222,8 +224,8 @@ ul {
   border: 1px solid goldenrod; }
 
 .imagenesGaleria {
-  height: 225px;
-  width: 295px; }
+  height: 556px;
+  width: auto; }
 
 .tamanioTextoGaleria {
   font-size: medium; }
@@ -341,9 +343,6 @@ ul {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
     gap: 1px 1px; }
-  .imgaenPortadaSobreMi {
-    width: 375px;
-    height: 491px; }
   .imagenesTitulosSobreMi {
     width: 703px;
     height: 453px;
